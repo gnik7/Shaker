@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+            <string>Quicksand-Bold</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Filter1TableViewCell" id="GVQ-Qm-pQM" customClass="Filter1TableViewCell" customModule="ShakerApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="55"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="GVQ-Qm-pQM" id="Qtm-72-8E7">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="54.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="right_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Uss-8j-rY5">
+                        <rect key="frame" x="302" y="19" width="10" height="16"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Uss-8j-rY5" secondAttribute="height" multiplier="43:71" id="eMd-CZ-3dz"/>
+                        </constraints>
+                    </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R8L-hP-Y4W">
+                        <rect key="frame" x="0.0" y="27" width="312" height="0.0"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" id="nuq-aK-R5W"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bundeslag" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xDk-HZ-v3z">
+                        <rect key="frame" x="10" y="6" width="282" height="21"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="18"/>
+                        <color key="textColor" red="0.29803921568627451" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Egal" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sou-J3-dFR">
+                        <rect key="frame" x="10" y="27" width="282" height="16"/>
+                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="14"/>
+                        <color key="textColor" red="0.81960784313725488" green="0.81960784313725488" blue="0.81960784313725488" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7zd-BL-wem">
+                        <rect key="frame" x="10" y="53.5" width="310" height="1"/>
+                        <color key="backgroundColor" red="0.81568627450980391" green="0.81568627450980391" blue="0.81568627450980391" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="kgO-tH-1WG"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Uss-8j-rY5" firstAttribute="height" secondItem="Qtm-72-8E7" secondAttribute="height" multiplier="0.3" id="1aU-zk-hYC"/>
+                    <constraint firstAttribute="leadingMargin" secondItem="xDk-HZ-v3z" secondAttribute="leading" constant="10" id="6oc-fY-oZK"/>
+                    <constraint firstItem="R8L-hP-Y4W" firstAttribute="top" secondItem="xDk-HZ-v3z" secondAttribute="bottom" id="6pZ-4r-v9d"/>
+                    <constraint firstAttribute="bottom" secondItem="7zd-BL-wem" secondAttribute="bottom" id="6zv-tx-zgx"/>
+                    <constraint firstItem="R8L-hP-Y4W" firstAttribute="centerY" secondItem="Qtm-72-8E7" secondAttribute="centerY" id="8Ox-wM-Rm0"/>
+                    <constraint firstItem="Uss-8j-rY5" firstAttribute="centerY" secondItem="Qtm-72-8E7" secondAttribute="centerY" id="BXS-sn-00m"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="R8L-hP-Y4W" secondAttribute="trailing" id="Cz5-qR-ggc"/>
+                    <constraint firstItem="Sou-J3-dFR" firstAttribute="top" secondItem="R8L-hP-Y4W" secondAttribute="bottom" id="HOm-oM-alr"/>
+                    <constraint firstItem="Uss-8j-rY5" firstAttribute="leading" secondItem="xDk-HZ-v3z" secondAttribute="trailing" constant="10" id="Ilx-UR-Rkv"/>
+                    <constraint firstItem="Uss-8j-rY5" firstAttribute="leading" secondItem="Sou-J3-dFR" secondAttribute="trailing" constant="10" id="f99-2B-37T"/>
+                    <constraint firstItem="R8L-hP-Y4W" firstAttribute="leading" secondItem="Qtm-72-8E7" secondAttribute="leadingMargin" constant="-8" id="nkR-dj-fAh"/>
+                    <constraint firstAttribute="trailing" secondItem="7zd-BL-wem" secondAttribute="trailing" id="qZ2-oF-yLa"/>
+                    <constraint firstItem="xDk-HZ-v3z" firstAttribute="leading" secondItem="Qtm-72-8E7" secondAttribute="leading" constant="10" id="tdg-OO-3sf"/>
+                    <constraint firstItem="Sou-J3-dFR" firstAttribute="leading" secondItem="Qtm-72-8E7" secondAttribute="leading" constant="10" id="tiP-hw-0Ks"/>
+                    <constraint firstItem="7zd-BL-wem" firstAttribute="leading" secondItem="Qtm-72-8E7" secondAttribute="leading" constant="10" id="vPp-zI-agb"/>
+                    <constraint firstAttribute="trailing" secondItem="Uss-8j-rY5" secondAttribute="trailing" constant="8" id="xss-vk-c2m"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="6oc-fY-oZK"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoryLabel" destination="xDk-HZ-v3z" id="eho-xr-vjq"/>
+                <outlet property="subCategoryLabel" destination="Sou-J3-dFR" id="SL0-uX-vqs"/>
+            </connections>
+            <point key="canvasLocation" x="254" y="232.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="right_arrow" width="14" height="24"/>
+    </resources>
+</document>

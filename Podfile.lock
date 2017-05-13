@@ -1,0 +1,48 @@
+PODS:
+  - Alamofire (3.5.0)
+  - AlamofireObjectMapper (3.0.2):
+    - Alamofire (~> 3.2)
+    - ObjectMapper (~> 1.0)
+  - Crashlytics (3.8.2):
+    - Fabric (~> 1.6.3)
+  - Fabric (1.6.9)
+  - Kingfisher (2.6.0)
+  - ObjectMapper (1.5.0)
+  - SwiftyJSON (2.4.0)
+
+DEPENDENCIES:
+  - Alamofire (~> 3.3)
+  - AlamofireObjectMapper (~> 3.0)
+  - Crashlytics
+  - Fabric
+  - Kingfisher (from `https://github.com/onevcat/Kingfisher`, branch `swift2.3`)
+  - SwiftyJSON (from `https://github.com/SwiftyJSON/SwiftyJSON`, branch `swift2`)
+
+EXTERNAL SOURCES:
+  Kingfisher:
+    :branch: swift2.3
+    :git: https://github.com/onevcat/Kingfisher
+  SwiftyJSON:
+    :branch: swift2
+    :git: https://github.com/SwiftyJSON/SwiftyJSON
+
+CHECKOUT OPTIONS:
+  Kingfisher:
+    :commit: c20e4556e84326e47e7e8081ea6903b2c2c00a39
+    :git: https://github.com/onevcat/Kingfisher
+  SwiftyJSON:
+    :commit: 54017d514a87b2b855b407131292c510cdeb65f8
+    :git: https://github.com/SwiftyJSON/SwiftyJSON
+
+SPEC CHECKSUMS:
+  Alamofire: b70a7352335f8ea5babd0a923eb7e8eacc67b877
+  AlamofireObjectMapper: 70f97cbf45c01c48d26aa07a1a7059a60ed7411d
+  Crashlytics: 27acca95a01b042a8294291dd6dff27f8f6af6d7
+  Fabric: bc5bec42cef4bcf1ee3ce0e218fc518e4b44dfbb
+  Kingfisher: d84c5fd176ea86cc7b8aac65fd55feda6f70f130
+  ObjectMapper: 386645adca9d9d23b95eda43090b09d66444cf14
+  SwiftyJSON: 96918c1bf505efa50c4f72957018dd3452090c9c
+
+PODFILE CHECKSUM: 63ceeabb51ce54b907a2d9e573b91b0d834462a6
+
+COCOAPODS: 1.0.1

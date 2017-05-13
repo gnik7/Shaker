@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9wf-wU-hOm">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Quicksand-Bold.ttf">
+            <string>Quicksand-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="772-Wl-Mun">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="9wf-wU-hOm" sceneMemberID="viewController">
+                    <nil key="simulatedTopBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="eTL-c0-QZJ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="KGb-zn-EU1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HH0-mh-QNm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1564" y="849"/>
+        </scene>
+        <!--Landing Page View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController storyboardIdentifier="IZLandingPageViewController" id="BYZ-38-t0r" customClass="IZLandingPageViewController" customModule="ShakerApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iNf-Tv-wD8">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="9Bk-KW-qE9"/>
+                                </constraints>
+                            </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shake_your_phone_button" translatesAutoresizingMaskIntoConstraints="NO" id="HBa-bq-vxy">
+                                <rect key="frame" x="15" y="75" width="345" height="196.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="HBa-bq-vxy" secondAttribute="height" multiplier="706:402" id="anP-lW-9cl"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pI8-TF-auH">
+                                <rect key="frame" x="15" y="207.5" width="345" height="49"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="UUc-4z-Jdm">
+                                        <rect key="frame" x="10" y="0.0" width="325" height="49"/>
+                                        <string key="text">Schüttel dein Smartphone 
+oder drücke hier für einen zufälligen Film</string>
+                                        <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="13"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Quicksand-Bold" family="Quicksand" pointSize="30"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="UUc-4z-Jdm" secondAttribute="bottom" id="i98-Vm-THp"/>
+                                    <constraint firstItem="UUc-4z-Jdm" firstAttribute="leading" secondItem="pI8-TF-auH" secondAttribute="leading" constant="10" id="iJD-Wa-hyk"/>
+                                    <constraint firstAttribute="trailing" secondItem="UUc-4z-Jdm" secondAttribute="trailing" constant="10" id="rOf-BR-Xen"/>
+                                    <constraint firstItem="UUc-4z-Jdm" firstAttribute="top" secondItem="pI8-TF-auH" secondAttribute="top" id="t3b-qr-oet"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Tm-4G-lP0">
+                                <rect key="frame" x="15" y="75" width="345" height="196.5"/>
+                                <connections>
+                                    <action selector="shakeButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hgs-Qs-c5p"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ubr-Kd-1p6">
+                                <rect key="frame" x="10" y="286.5" width="355" height="380.5"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="HBa-bq-vxy" secondAttribute="trailing" constant="15" id="0wD-h8-2cD"/>
+                            <constraint firstItem="iNf-Tv-wD8" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1T4-Km-rUS"/>
+                            <constraint firstItem="pI8-TF-auH" firstAttribute="leading" secondItem="HBa-bq-vxy" secondAttribute="leading" id="3Jz-o8-jfX"/>
+                            <constraint firstItem="5Tm-4G-lP0" firstAttribute="leading" secondItem="HBa-bq-vxy" secondAttribute="leading" id="4JK-iv-JTy"/>
+                            <constraint firstAttribute="trailing" secondItem="ubr-Kd-1p6" secondAttribute="trailing" constant="10" id="76g-kx-4QK"/>
+                            <constraint firstItem="5Tm-4G-lP0" firstAttribute="trailing" secondItem="HBa-bq-vxy" secondAttribute="trailing" id="7jB-JM-dH8"/>
+                            <constraint firstItem="pI8-TF-auH" firstAttribute="trailing" secondItem="HBa-bq-vxy" secondAttribute="trailing" id="BQv-UH-zBR"/>
+                            <constraint firstItem="pI8-TF-auH" firstAttribute="bottom" secondItem="HBa-bq-vxy" secondAttribute="bottom" constant="-15" id="Cxd-BP-PvQ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ubr-Kd-1p6" secondAttribute="bottom" id="Eqe-Jr-Qpv"/>
+                            <constraint firstItem="HBa-bq-vxy" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="H1I-hK-9tx"/>
+                            <constraint firstItem="iNf-Tv-wD8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="L0A-G9-gfH"/>
+                            <constraint firstItem="HBa-bq-vxy" firstAttribute="top" secondItem="iNf-Tv-wD8" secondAttribute="bottom" constant="5" id="O6d-cd-rHy"/>
+                            <constraint firstItem="ubr-Kd-1p6" firstAttribute="top" secondItem="5Tm-4G-lP0" secondAttribute="bottom" constant="15" id="QVA-Jh-gPs"/>
+                            <constraint firstItem="pI8-TF-auH" firstAttribute="height" secondItem="HBa-bq-vxy" secondAttribute="height" multiplier="0.25" id="TFO-ks-Dcp"/>
+                            <constraint firstItem="ubr-Kd-1p6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="TPA-TK-X1n"/>
+                            <constraint firstItem="HBa-bq-vxy" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" priority="750" id="VMl-sv-RFd"/>
+                            <constraint firstItem="ubr-Kd-1p6" firstAttribute="top" secondItem="HBa-bq-vxy" secondAttribute="bottom" constant="15" id="Wil-of-3Tg"/>
+                            <constraint firstItem="5Tm-4G-lP0" firstAttribute="top" secondItem="HBa-bq-vxy" secondAttribute="top" id="Ya4-jO-JaO"/>
+                            <constraint firstItem="HBa-bq-vxy" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="15" id="e0f-Ta-V5W"/>
+                            <constraint firstAttribute="trailing" secondItem="iNf-Tv-wD8" secondAttribute="trailing" id="pkw-6j-OeK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="swB-j4-x3j"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="landingTableView" destination="ubr-Kd-1p6" id="Vly-7v-HUz"/>
+                        <outlet property="navigationView" destination="iNf-Tv-wD8" id="Ota-kj-FVV"/>
+                        <outlet property="shakeButtonLeftConstraint" destination="e0f-Ta-V5W" id="mfk-Xr-fpa"/>
+                        <outlet property="shakeButtonRightConstraint" destination="0wD-h8-2cD" id="fuN-uL-por"/>
+                        <outlet property="shakeButtonWidthConstraint" destination="VMl-sv-RFd" id="2T3-Uc-KXE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-802" y="849"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="shake_your_phone_button" width="270" height="154"/>
+    </resources>
+</document>
